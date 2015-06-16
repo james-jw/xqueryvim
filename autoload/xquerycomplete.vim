@@ -1497,7 +1497,7 @@ function! xquerycomplete#CompleteXQuery(findstart, base)
         \ 'contains-case-insensitive',
         \ 'contains-word',
         \ 'copy-attributes',
-        \ 'date',
+        \ { 'word': 'fn:date', menu: '($year, $month, $day) as xs:date', 'info': 'Creates a date from the provided $year, $month and $day numerials' },
         \ 'dateTime',
         \ 'day-in-year',
         \ 'day-of-week-abbrev-en',
@@ -1762,8 +1762,7 @@ function! xquerycomplete#CompleteXQuery(findstart, base)
     "  always want the colon after it too!
     "
     "   --> see javascriptcomplete.vim:583
-    "
-	call map(ALL_FUNCTION_NAMESPACES, 'v:val.":"')
+    "   call map(ALL_FUNCTION_NAMESPACES, 'v:val.":"')
 
     let namespace            = a:base
     let function_completions = []
