@@ -1497,7 +1497,7 @@ function! xquerycomplete#CompleteXQuery(findstart, base)
         \ 'contains-case-insensitive',
         \ 'contains-word',
         \ 'copy-attributes',
-        \ { 'word': 'fn:date', menu: '($year, $month, $day) as xs:date', 'info': 'Creates a date from the provided $year, $month and $day numerials' },
+        \ { 'word': 'fn:date', 'menu': '($year, $month, $day) as xs:date', 'info': 'Creates a date from the provided $year, $month and $day numerials' },
         \ 'dateTime',
         \ 'day-in-year',
         \ 'day-of-week-abbrev-en',
