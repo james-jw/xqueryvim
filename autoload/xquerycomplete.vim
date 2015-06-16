@@ -1781,7 +1781,7 @@ function! xquerycomplete#CompleteXQuery(findstart, base)
       call map(all_cpffunctions, '"cpf:" . v:val . "("')
       let function_completions = copy(all_cpffunctions)
     elseif namespace =~ 'functx'
-      call map(functxFunctions, '"functx:" . v:val . "("')
+      " call map(functxFunctions, '"functx:" . v:val . "("')
       let function_completions = copy(functxFunctions)
     elseif namespace =~ 'fn'
       call map(fnfunctions, '"fn:" . v:val . "("')
